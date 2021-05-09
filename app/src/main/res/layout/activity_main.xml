@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/AppTheme">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Team A"
+                style="@style/TextView"/>
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                style="@style/ScoreView"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="score3a"
+                android:text="+3 points"
+                style="@style/ButtonSt"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="score2a"
+                android:text="+2 points"
+                style="@style/ButtonSt"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="freeThrowa"
+                android:text="Free Throw"
+                style="@style/ButtonSt"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            tools:context=".MainActivity">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:padding="4dp"
+                android:text="Team B"
+                style="@style/TextView"/>
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="0"
+                style="@style/ScoreView"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="score3b"
+                android:text="+3 points"
+                style="@style/ButtonSt"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="score2b"
+                android:text="+2 points"
+                style="@style/ButtonSt"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="freeThrowb"
+                android:text="Free Throw"
+                style="@style/ButtonSt"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="32dp"
+        android:onClick="reset"
+        android:text="Reset"
+        style="@style/ButtonSt"/>
+</RelativeLayout>
